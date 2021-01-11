@@ -21,6 +21,8 @@ class UnderViewController: UIViewController {
     // MARK: - ACTION
     @IBAction func passTextButton(sender: UIButton) {
         delegate?.upLabel.text = underTextField.text
+        
+        
     }
 
 }

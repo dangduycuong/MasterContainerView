@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1CFE9B25AC5941006CD7F1 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CFE9A25AC5941006CD7F1 /* UIViewController.swift */; };
+		CE1CFE9D25AC5983006CD7F1 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CFE9C25AC5983006CD7F1 /* RedViewController.swift */; };
+		CE1CFE9F25AC59E3006CD7F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CFE9E25AC59E3006CD7F1 /* HomeViewController.swift */; };
+		CE1CFEA125AC5BC5006CD7F1 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CFEA025AC5BC5006CD7F1 /* GreenViewController.swift */; };
 		CEC0294422851B3B00670037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0294322851B3B00670037 /* AppDelegate.swift */; };
 		CEC0294622851B3B00670037 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0294522851B3B00670037 /* ContainerViewController.swift */; };
 		CEC0294922851B3B00670037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC0294722851B3B00670037 /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1CFE9A25AC5941006CD7F1 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CE1CFE9C25AC5983006CD7F1 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		CE1CFE9E25AC59E3006CD7F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE1CFEA025AC5BC5006CD7F1 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		CEC0294022851B3B00670037 /* MasterContainerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterContainerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0294322851B3B00670037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC0294522851B3B00670037 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +115,10 @@
 				CEC0294522851B3B00670037 /* ContainerViewController.swift */,
 				CEC0297622851BFA00670037 /* UpViewController.swift */,
 				CEC0297422851BE700670037 /* UnderViewController.swift */,
+				CE1CFE9A25AC5941006CD7F1 /* UIViewController.swift */,
+				CE1CFE9C25AC5983006CD7F1 /* RedViewController.swift */,
+				CE1CFEA025AC5BC5006CD7F1 /* GreenViewController.swift */,
+				CE1CFE9E25AC59E3006CD7F1 /* HomeViewController.swift */,
 				CEC0294722851B3B00670037 /* Main.storyboard */,
 				CEC0294D22851B3C00670037 /* Assets.xcassets */,
 				CEC0294F22851B3C00670037 /* LaunchScreen.storyboard */,
@@ -265,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1CFEA125AC5BC5006CD7F1 /* GreenViewController.swift in Sources */,
+				CE1CFE9D25AC5983006CD7F1 /* RedViewController.swift in Sources */,
 				CEC0294C22851B3B00670037 /* MasterContainerView.xcdatamodeld in Sources */,
 				CEC0297522851BE700670037 /* UnderViewController.swift in Sources */,
+				CE1CFE9F25AC59E3006CD7F1 /* HomeViewController.swift in Sources */,
+				CE1CFE9B25AC5941006CD7F1 /* UIViewController.swift in Sources */,
 				CEC0294622851B3B00670037 /* ContainerViewController.swift in Sources */,
 				CEC0297722851BFA00670037 /* UpViewController.swift in Sources */,
 				CEC0294422851B3B00670037 /* AppDelegate.swift in Sources */,
