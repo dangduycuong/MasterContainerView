@@ -12,6 +12,21 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    var display: Int = 0 {
+        didSet {
+            switch display {
+            case 0:
+                remove(asChildViewController: redViewController)
+                add(asChildViewController: greenViewController)
+            case 1:
+                remove(asChildViewController: greenViewController)
+                add(asChildViewController: redViewController)
+            default:
+                break
+            }
+        }
+    }
+    
     private lazy var redViewController: RedViewController = {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -78,34 +93,7 @@ class HomeViewController: UIViewController {
     }
     
     private func updateView() {
-        if segmentedControl.selectedSegmentIndex == 0 {
-            remove(asChildViewController: redViewController)
-            add(asChildViewController: greenViewController)
-        } else {
-            remove(asChildViewController: greenViewController)
-            add(asChildViewController: redViewController)
-        }
-    }
-    
-    func setupView() {
-        setupSegmentedControl()
-        
-        updateView()
-    }
-    
-    private func setupSegmentedControl() {
-        // Configure Segmented Control
-        segmentedControl.removeAllSegments()
-        segmentedControl.insertSegment(withTitle: "Summary", at: 0, animated: false)
-        segmentedControl.insertSegment(withTitle: "Sessions", at: 1, animated: false)
-        segmentedControl.addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
-
-        // Select First Segment
-        segmentedControl.selectedSegmentIndex = 0
-    }
-    
-    @objc func selectionDidChange(_ sender: UISegmentedControl) {
-        updateView()
+        display = segmentedControl.selectedSegmentIndex
     }
     
     
